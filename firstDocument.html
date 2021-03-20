@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <style>
+                #idek {
+                    animation-name: spin;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+
+                #enterLeft {
+                    animation-name: enterLeft;
+                    animation-duration: 1.5s; 
+                }
+
+                #fadeElement {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                            transform: scale(50px);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                            transform: scale(200px);
+                        }
+                    }
+
+                    @keyframes fade {
+                        0% {
+                            opacity: 0%;
+                        }
+                        100% {
+                            opacity: 100%;
+                        }
+                    }
+
+                    @keyframes enterLeft {
+                        0% {
+                            opacity: 0%;
+                            left: 400px;
+                        }
+                        100% {
+                            opacity: 100%;
+                            left: 0px;
+                        }
+                    }
+
+                body {
+                    text-align: center;
+                    font-family: Verdana;
+                    background: linear-gradient(90deg, #DDDDDD, #CCCCCC, #BBBBBB, #AAAAAA);
+
+                }
+                
+                img {   
+                    border-color: gray;
+                    border-radius: 25px;
+                    align-content: center;
+                    box-shadow: 0px 0px 50px black;
+                }
+            </style>
+            <meta charset = "UTF-8">
+            <title>First Document</title>
+        </head>
+
+    <body>
+        <h1 id = "enterLeft">Elon Musk Funny</h1>
+        <img src = "https://cnet2.cbsistatic.com/img/u5kHjRvIGaXSlCQek5zYnrHulKA=/1200x675/2019/12/16/8276189c-a846-4554-944d-afaf61ffcae9/gettyimages-1130598318-1.jpg" alt = "the funny elon reddit haha" width = "500" id = "fadeElement">
+        <h3>This is Elon</h3>
+        <br>
+        <label for="sayElon">Talk to Elon:</label>
+  <input type="text" id="elonTalk" name="elonTalk"><br><br>
+  <input type="submit" value="Submit">   <br><br>   
+      <p>(note this input doesn't do anything yet)</p>
+  <br>
+      <div id = "fadeElement">
+        <h1 id = "idek">idek</h1>
+    </div>
+
+    </body>
+    </html>
